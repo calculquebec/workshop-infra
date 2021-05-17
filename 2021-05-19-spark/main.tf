@@ -2,10 +2,10 @@ terraform {
   required_version = ">= 0.14.2"
 }
 
-var "password" {}
-var "nb_users" {}
-var "node_count" {}
-var "email" {}
+variable "password" {}
+variable "nb_users" {}
+variable "node_count" {}
+variable "email" {}
 
 module "openstack" {
   source         = "git::https://github.com/ComputeCanada/magic_castle.git//openstack?ref=11.0"
