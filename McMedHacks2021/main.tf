@@ -8,7 +8,7 @@ variable "email" {}
 module "openstack" {
   source         = "git::https://github.com/ComputeCanada/magic_castle.git//openstack?ref=11.2"
   config_git_url = "https://github.com/ComputeCanada/puppet-magic_castle.git"
-  config_version = "11.2"
+  config_version = "11.3"
 
   cluster_name = "mcmedhacks2021"
   domain       = "calculquebec.cloud"
