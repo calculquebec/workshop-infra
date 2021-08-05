@@ -17,7 +17,7 @@ module "openstack" {
   instances = {
     mgmt   = { type = "p4-6gb", tags = ["puppet", "mgmt", "nfs"], count = 1 }
     login  = { type = "p2-3gb", tags = ["login", "public", "proxy"], count = 1 }
-    node   = { type = "g1-18gb-c4-22gb", tags = ["node"], count = 4 }
+    node   = { type = "g1-18gb-c4-22gb", tags = ["node"], count = 20 }
   }
 
   volumes = {
